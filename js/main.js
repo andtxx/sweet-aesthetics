@@ -48,3 +48,7 @@ $(document).ready(function() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 });
+
+$('[type="tel"]').on('input', function() {
+	$(this).val($(this).val().replace(/[A-Za-zA-Яа-я-Ёе]/, ''))
+});
